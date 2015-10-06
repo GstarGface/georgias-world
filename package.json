@@ -1,0 +1,26 @@
+{
+  "name": "georgiaglassie.com",
+  "version": "1.0.0",
+  "description": "my site",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "express-handlebars": "^2.0.1",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GstarGface/georgias-world.git"
+  },
+  "author": "Georgia Glassie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GstarGface/georgias-world/issues"
+  },
+  "homepage": "https://github.com/GstarGface/georgias-world#readme"
+}
