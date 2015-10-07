@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="shortcut icon" href="/img/splatter.png">
 	<title>Georgia's World</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
 	<link rel="stylesheet" href="/css/main.css">
 </head>
 <body ng-app="app">
@@ -13,7 +15,7 @@
 		</div>
 		<div class="menu">
 			<div ng-repeat="page in pages" class="column">
-				<a href="{{page.route}}" class="page">{{page.name}}</a>
+				<a ng-click="goToRoute(page.name)" href="{{page.route}}" class="page">{{page.name}}</a>
 			</div>
 		</div>
 		<div class="social">
@@ -23,7 +25,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="route" ng-view></div>
+	<div class="route" id="route{{page.name}}" ng-view="" autoscroll="true"></div>
 	<!-- Modules -->
 	<script src="js/app.js"></script>
 	<!-- Controllers -->

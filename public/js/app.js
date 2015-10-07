@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('app', ['ngRoute', 'ngAnimate']);
 
 app.config(['$routeProvider', function($routeProvider){
 
@@ -11,7 +11,11 @@ app.config(['$routeProvider', function($routeProvider){
 		templateUrl:'views/works.html',
 		controller: 'MainController'
 	}).
-	when('/404',{
+	when('/contact', {
+		templateUrl:'views/contact.html',
+		controller:'MainController'
+	}).
+	when('/404', {
 		templateUrl:'views/404.html',
 		controller:'MainController'
 	});

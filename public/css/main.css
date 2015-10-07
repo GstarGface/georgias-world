@@ -6,7 +6,7 @@ body {
 }
 .title{
   width:100%;
-  height:500px;
+  height:350px;
 }
 .logo a{
   text-decoration: none;
@@ -73,14 +73,21 @@ body {
   float:initial;
   padding-left: 200px;
   text-align: left;
+
 }
 .page{
   color:#000;
   text-decoration: none;
   cursor: pointer;
-  font-size: 2.5em;
-  text-shadow: 0 0 3px #FFF;
+  font-size: 2em;
+  text-shadow: 0 0 1em #fff, 0 0 0.5em #fff, 0 0 0.1em #fff;
   letter-spacing: 1px;
+  font-style: normal;
+}
+.page:hover{
+  color:#00ffff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #00ffff, 0 0 0.5em #00ffff, 0 0 0.1em #00ffff;
+
 }
 .social{
   display:inline-block;
@@ -95,8 +102,10 @@ body {
 }
 .route{
   background: url('/img/brick-mono.jpg') center;
-  min-height: 500px;
-  padding: 8em 8em 8em 8em;
+  border-top: 10px solid #000;
+  margin:0 auto;
+  min-height: 200px;
+  padding: 6em 9em 6em 9em;
   font-family: 'Inconsolata';
 }
 .panel{
@@ -115,10 +124,10 @@ body {
   margin-right: 20px;
   -webkit-margin-before:0px;
   font-family: 'Vibur';
-  font-size: 2em;
-  text-shadow: 0 0 3px #FFF;
+  font-size: 1.5em;
   letter-spacing: 1px;
   color:#000;
+  text-shadow:0 0 1em #fff, 0 0 0.5em #fff, 0 0 0.1em #fff;
 }
 .sub{
   text-align: center;
@@ -150,4 +159,11 @@ body {
 img.thumbnail{
   display:block;
   max-width:100%;
+}
+.contact{
+  font-weight:800px;
+  color:#000;
+}
+.contact:hover{
+  color:#00ffff;
 }

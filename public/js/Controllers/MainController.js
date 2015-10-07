@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', function($scope){
+app.controller('MainController', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
 	$scope.title = 'Welcome to Georgia\'s World';
 	$scope.pages = [ 
 		{
@@ -43,5 +43,9 @@ app.controller('MainController', ['$scope', function($scope){
 			thumbnail:'/img/mollydog.png'
 		}
 	];
+	$scope.goToRoute = function(page){
+		$location.hash('route' + page);
+		$anchorScroll();
+	};
 
 }]);
