@@ -6,8 +6,8 @@ body {
   font-family: 'Vibur';
 }
 .title{
-  width:100%;
-  height:350px;
+  max-width:100%;
+  min-height:380px;
 }
 .logo a{
   text-decoration: none;
@@ -172,18 +172,19 @@ a{
   color:#00ffff;
 }
 /*Mobile sizing stuff*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 750px) and (-webkit-min-device-pixel-ratio: 3){
+@media only screen and (max-device-width: 750px){
   .title{
-    width:100%;
-    height:40%; 
+    max-width: 100%;
+    width:300px;
+    height:200px; 
   }
   .logo a{
-    position:relative;
+    position:absolute;
     margin:0 auto;
-    width:100%;
-    height:80%;
     text-align: left;
     padding:0 auto;
+    width: 250px;
+    height: 180px;
   }
   .me{
     width:35%;
