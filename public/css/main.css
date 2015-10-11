@@ -1,16 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Vibur|Zeyada|Inconsolata);
-/*Mobile sizing stuff*/
-@media only screen and (min-device-width:320px) and (max-device-width: 750px) and (-webkit-min-device-pixel-ratio: 3){
-  .title{
-    width:100%;
-    height:40%; 
-  }
-  .logo a{
-    width:100%;
-    height:80%;
-    text-align: left;
-  }
-}
 
 /*General Styling*/
 body {
@@ -128,6 +116,7 @@ body {
   padding:3% 5% 4% 5%;
   opacity: 1;
   background: rgba(255, 255, 255, 0.35);
+  text-align: center;
 }
 .tab{
   cursor: default;
@@ -144,18 +133,18 @@ body {
 }
 .me{
   display:block;
-  width:20%;
+  width:25%;
   float:left;
-  margin:7% 5% 5% 0;
+  margin:0% 5% 5% 0;
 }
 .light-box{
   z-index:1004;
   float:left;
-  margin:3% 7% 0% 7%;
+  margin:3% 5% 0% 5%;
   display:block;
-  max-width: 30%;
-  max-height: 30%;
-  padding: 1em;
+  width: 30%;
+  height: 30%;
+  padding: .5em;
   background: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -164,6 +153,7 @@ body {
   -moz-box-shadow: 2px 2px  6px 6px rgba(0,0,0,0.35);
   box-shadow: 2px 2px 6px 6px rgba(0,0,0,0.35);
   text-align:center;
+  font-size: .75em;
 }
 img.thumbnail{
   display:block;
@@ -180,4 +170,22 @@ img.thumbnail{
 a{
   text-decoration: none;
   color:#00ffff;
+}
+/*Mobile sizing stuff*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 750px) and (-webkit-min-device-pixel-ratio: 3){
+  .title{
+    width:100%;
+    height:40%; 
+  }
+  .logo a{
+    position:relative;
+    margin:0 auto;
+    width:100%;
+    height:80%;
+    text-align: left;
+    padding:0 auto;
+  }
+  .me{
+    width:35%;
+  }
 }
